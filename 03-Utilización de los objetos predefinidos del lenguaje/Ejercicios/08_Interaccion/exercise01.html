@@ -1,0 +1,32 @@
+<!doctype html>
+<!--
+  Asigna manejadores al recuadro con las propiedades `onclick`, `ondblclick` y
+  `onmousemove`:
+    - clic: incrementa el contador.
+    - doble clic: pone el contador a 0.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mouse</title>
+  <style>
+    #area {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed gray;
+    }
+  </style>
+</head>
+<body>
+  <div id="area"></div>
+  <p id="clicks">Clicks: 0</p>
+
+  <script>
+    const area = document.querySelector("#area");
+    const clicksLabel = document.querySelector("#clicks");
+    let clicks = 0;
+
+    // TODO
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<!--
+  Cada vez que cambie el tamaño de la ventana:
+    - Muestra en `sizeLabel` el tamaño del área visible ("ancho x alto").
+    - Añade al `body` la clase "narrow" cuando el ancho sea menor de 600 px (y
+      quítala si no). Puedes usar: `classList.toggle(clase, condición)`.
+
+  Resultado esperado:
+    Al estrechar la ventana por debajo de 600 px, el fondo cambia de color. El
+    tamaño mostrado se actualiza en tiempo real.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Resize event</title>
+  <style>
+    body.narrow {
+      background: lavender;
+    }
+  </style>
+</head>
+<body>
+  <p id="size"></p>
+
+  <script>
+    const sizeLabel = document.querySelector("#size");
+
+    // TODO
+
+    // Lanza el evento una vez al cargar para mostrar el estado inicial.
+    window.dispatchEvent(new Event("resize"));
+  </script>
+</body>
+</html>
