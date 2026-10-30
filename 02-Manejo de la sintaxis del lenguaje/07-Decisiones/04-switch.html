@@ -1,0 +1,25 @@
+<script>
+    let dia = "domingo"
+    switch (dia) {
+        case "lunes":
+        case "martes":
+        case "miercoles":
+        case "jueves":
+        case "viernes":
+            console.log("Es entre semana")
+            break;
+        case "sabado":
+        case "domingo":
+            console.log("Es fin de semana")
+    }
+
+    // O también
+    switch (dia) {
+        case "sabado":
+        case "domingo":
+            console.log("Es fin de semana")
+        default:
+            console.log("Es entre semana")
+    }
+
+</script>
