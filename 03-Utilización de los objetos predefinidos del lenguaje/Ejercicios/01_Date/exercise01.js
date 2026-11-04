@@ -18,8 +18,8 @@ const dates = [october30, january32];
 
 for (let i = 0; i < dates.length; i++) {
   const date = dates[i];
-  let formatted = ""; // TODO
-  let dayName = ""; // TODO
+  const formatted = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+  const dayName = DAY_NAMES[date.getDay()];
 
   console.log(`${formatted} is a ${dayName}`);
 }

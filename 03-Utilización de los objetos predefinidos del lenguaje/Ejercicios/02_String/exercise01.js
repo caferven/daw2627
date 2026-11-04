@@ -12,9 +12,14 @@
  */
 
 let fullName = "aNA maRÍA lóPEZ";
-fullName.toUpperCase();
+fullName.toUpperCase(); // para pasarlo a mayúscula -> fullName = fullName.toUpperCase()
 console.log(fullName);
 
-// TODO
+const words = fullName.split(" ");
+for (let i = 0; i < words.length; i++) {
+  const word = words[i];
+  words[i] = word.charAt(0).toUpperCase() + word.substring(1).toLowerCase();
+}
+fullName = words.join(" ");
 
 console.log(fullName);

@@ -22,11 +22,17 @@
     let helpWindow = null;
 
     document.querySelector("#open").addEventListener("click", () => {
-      // TODO
+      helpWindow = window.open(
+        "https://developer.mozilla.org",
+        "help",
+        "width=800,height=600,left=200,top=100",
+      );
     });
 
     document.querySelector("#close").addEventListener("click", () => {
-      // TODO
+      if (helpWindow && !helpWindow.closed) {
+        helpWindow.close();
+      }
     });
   </script>
 </body>

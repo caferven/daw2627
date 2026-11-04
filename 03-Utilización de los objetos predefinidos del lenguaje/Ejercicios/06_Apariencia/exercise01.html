@@ -20,19 +20,19 @@
     let popup = null;
 
     document.querySelector("#open").addEventListener("click", () => {
-      // TODO
+      popup = window.open("", "resizable", "width=400,height=300");
     });
 
     document.querySelector("#grow").addEventListener("click", () => {
-      // TODO
+      popup?.resizeBy(100, 100);
     });
 
     document.querySelector("#shrink").addEventListener("click", () => {
-      // TODO
+      popup?.resizeBy(-100, -100);
     });
 
     document.querySelector("#reset").addEventListener("click", () => {
-      // TODO
+      popup?.resizeTo(400, 300);
     });
   </script>
 </body>
