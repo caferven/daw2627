@@ -26,11 +26,13 @@
     let clicks = 0;
 
     area.onclick = () => {
-      // TO-DO
+      clicks++;
+      clicksLabel.textContent = `Clicks: ${clicks}`;
     };
 
     area.ondblclick = () => {
-      // TO-DO
+      clicks = 0;
+      clicksLabel.textContent = "Clicks: 0";
     };
   </script>
 </body>

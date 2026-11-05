@@ -21,7 +21,16 @@
   <script>
     const result = document.querySelector("#result");
 
-    // TODO
+    const text = prompt("Type something");
+
+    if (text === null || text === "") {
+      alert("You did not type anything");
+      result.textContent = "Nothing typed";
+    } else if (confirm(`Save "${text}"?`)) {
+      result.textContent = `Saved: ${text}`;
+    } else {
+      result.textContent = `Discarded: ${text}`;
+    }
   </script>
 </body>
 </html>
