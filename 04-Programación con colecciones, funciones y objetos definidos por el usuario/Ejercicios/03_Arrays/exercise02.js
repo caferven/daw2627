@@ -7,11 +7,11 @@
  *   - `pair`: con `new Array`, que contenga 5 y 10.
  */
 
-const empty = []; // TODO
-const mixed = []; // TODO
-const slots = []; // TODO
-const single = []; // TODO
-const pair = []; // TODO
+const empty = [];
+const mixed = [7, "siete", true];
+const slots = new Array(5);
+const single = Array.of(5);
+const pair = new Array(5, 10);
 
 console.log("empty:", empty.length, empty);
 console.log("mixed:", mixed.length, mixed);

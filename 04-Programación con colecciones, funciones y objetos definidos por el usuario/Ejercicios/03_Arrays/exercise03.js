@@ -13,14 +13,14 @@ const building = [
   [null, "Sara", "Iván", "Jorge"],
 ];
 
-let owner = ""; // TODO
+let owner = building[1][2];
 console.log(`Floor 1, door 2: ${owner}`);
 
-// TODO: asigna "Elena" al piso libre de la planta 0
+building[0][2] = "Elena";
 console.log(building[0]);
 
-let floors = 0; // TODO
+let floors = building.length;
 console.log(`Floors: ${floors}`);
 
-let doorsFloor2 = 0; // TODO
+let doorsFloor2 = building[2].length;
 console.log(`Doors on floor 2: ${doorsFloor2}`);

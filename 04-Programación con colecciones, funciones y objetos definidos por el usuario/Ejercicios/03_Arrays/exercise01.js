@@ -8,14 +8,14 @@
 
 const colors = ["red", "green", "blue", "yellow"];
 
-let first = ""; // TODO
+let first = colors[0];
 console.log(`First: ${first}`);
 
-let last = ""; // TODO
+let last = colors[colors.length - 1];
 console.log(`Last: ${last}`);
 
-let total = 0; // TODO
+let total = colors.length;
 console.log(`Total: ${total}`);
 
-// TODO: cambia el segundo color por "purple"
+colors[1] = "purple";
 console.log(colors);
