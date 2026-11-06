@@ -8,24 +8,23 @@
  *   Hola, Ana!
  *   Buenos días, Luis!
  *   Hola, undefined!
- *   121
- *   110
  *   menor
  *   adulto
  */
 
-function greet(name, greeting) {
-  // TODO
+function greet(name, greeting = "Hola") {
+  return `${greeting}, ${name}!`;
 }
 
 function ageGroup(age) {
-  // TODO
+  if (age < 18) {
+    return "menor";
+  }
+  return "adulto";
 }
 
 console.log(greet("Ana"));
 console.log(greet("Luis", "Buenos días"));
 console.log(greet());
-console.log(priceWithVat(100));
-console.log(priceWithVat(100, 10));
 console.log(ageGroup(15));
 console.log(ageGroup(30));

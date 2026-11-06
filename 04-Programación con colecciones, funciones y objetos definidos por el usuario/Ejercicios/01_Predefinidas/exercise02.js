@@ -12,14 +12,14 @@
  *   2026abc -> 2026
  */
 
-let hex = 0; // TODO
+let hex = parseInt("ff", 16);
 console.log(`ff -> ${hex}`);
 
-let binary = 0; // TODO
+let binary = parseInt("1010", 2);
 console.log(`1010 -> ${binary}`);
 
-let octal = 0; // TODO
+let octal = parseInt("777", 8);
 console.log(`777 -> ${octal}`);
 
-let year = 0; // TODO
+let year = parseInt("2026abc", 10);
 console.log(`2026abc -> ${year}`);

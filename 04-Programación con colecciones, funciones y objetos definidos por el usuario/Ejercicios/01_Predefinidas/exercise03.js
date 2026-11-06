@@ -7,21 +7,21 @@
  */
 
 const age = "25";
-let ageIsNaN = false; // TODO
-let ageIsFinite = false; // TODO
+let ageIsNaN = isNaN(age);
+let ageIsFinite = isFinite(age);
 console.log(`"${age}" -> isNaN: ${ageIsNaN}, isFinite: ${ageIsFinite}`);
 
 const testName = "Lucía";
-let nameIsNaN = false; // TODO
-let nameIsFinite = false; // TODO
+let nameIsNaN = isNaN(testName);
+let nameIsFinite = isFinite(testName);
 console.log(`"${testName}" -> isNaN: ${nameIsNaN}, isFinite: ${nameIsFinite}`);
 
 const division = 10 / 0;
-let divisionIsNaN = false; // TODO
-let divisionIsFinite = false; // TODO
+let divisionIsNaN = isNaN(division);
+let divisionIsFinite = isFinite(division);
 console.log(`${division} -> isNaN: ${divisionIsNaN}, isFinite: ${divisionIsFinite}`);
 
 const empty = "";
-let emptyIsNaN = false; // TODO
-let emptyIsFinite = false; // TODO
+let emptyIsNaN = isNaN(empty);
+let emptyIsFinite = isFinite(empty);
 console.log(`"${empty}" -> isNaN: ${emptyIsNaN}, isFinite: ${emptyIsFinite}`);

@@ -6,9 +6,9 @@
 
 const baseUrl = "https://www.example.com/search?q=";
 const search = "café con leche & tostadas";
-let url = ""; // TODO
+let url = baseUrl + encodeURIComponent(search);
 console.log(url);
 
 const received = "Mar%C3%ADa%20L%C3%B3pez";
-let fullName = ""; // TODO
+let fullName = decodeURIComponent(received);
 console.log(fullName);

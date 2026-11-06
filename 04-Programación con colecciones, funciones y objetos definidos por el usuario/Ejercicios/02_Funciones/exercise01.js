@@ -7,11 +7,15 @@
 
 console.log(`Before declaration: ${rectangleArea(1, 2)}`);
 
-// TODO
+function rectangleArea(width, height) {
+  return width * height;
+}
 
-// TODO
+const triangleArea = function (base, height) {
+  return (base * height) / 2;
+};
 
-// TODO
+const squareArea = (side) => side * side;
 
 console.log(`Rectangle: ${rectangleArea(3, 5)}`);
 console.log(`Triangle: ${triangleArea(6, 4)}`);
