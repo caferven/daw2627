@@ -1,5 +1,5 @@
 /*
- * Convierte los textos a número con `parseInt` (indicando siempre la base 10)
+ * Convierte los textos a número con `parseInt` (indicando siempre la base)
  * y `parseFloat`:
  *   - `totalWidth`: suma de `sidebarWidth` y `contentWidth`.
  *   - `total`: precio de `quantity` unidades a `unitPrice` cada una.
