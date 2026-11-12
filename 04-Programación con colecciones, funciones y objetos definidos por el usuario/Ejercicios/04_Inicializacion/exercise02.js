@@ -8,13 +8,14 @@
 
 const scores = [];
 
-// TODO: añade 7 y 9
-let newLength = 0; // TODO: añade 4 y guarda lo que devuelve push
+scores.push(7);
+scores.push(9);
+let newLength = scores.push(4);
 console.log(scores);
 console.log(`Length after last push: ${newLength}`);
 
-// TODO: añade 10 y 6 con una sola llamada
+scores.push(10, 6);
 console.log(scores);
 
-let lastIndex = 0; // TODO
+let lastIndex = scores.length - 1;
 console.log(`Last index: ${lastIndex}`);

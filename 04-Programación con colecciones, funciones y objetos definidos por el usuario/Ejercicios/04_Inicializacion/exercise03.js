@@ -7,9 +7,13 @@
  *     superior derecha.
  */
 
-const classroom = [[], []]; // TODO
+const classroom = [
+  ["Ana", "Luis", "Marta"],
+  ["Pablo", "Sara", "Iván"],
+];
 console.log(classroom[1][2]);
 
-const board = []; // TODO
-// TODO: "X" en el centro y "O" en la esquina superior derecha
+const board = Array.from({ length: 3 }, () => Array(3).fill("-"));
+board[1][1] = "X";
+board[0][2] = "O";
 console.log(board);
