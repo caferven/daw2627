@@ -14,6 +14,13 @@ const grades = [
 
 let total = 0;
 
-// TODO: dos for anidados
+for (let i = 0; i < grades.length; i++) {
+  let rowSum = 0;
+  for (let j = 0; j < grades[i].length; j++) {
+    rowSum += grades[i][j];
+  }
+  total += rowSum;
+  console.log(`${students[i]}: ${rowSum / grades[i].length}`);
+}
 
 console.log(`Total: ${total}`);

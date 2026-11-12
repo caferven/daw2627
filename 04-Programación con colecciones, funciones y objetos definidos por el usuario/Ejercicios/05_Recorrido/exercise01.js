@@ -8,10 +8,14 @@
 const temperatures = [18, 21, 25, 19, 16, 21];
 
 let sum = 0;
-// TODO: for...of
-let average = 0; // TODO
+for (const temperature of temperatures) {
+  sum += temperature;
+}
+let average = sum / temperatures.length;
 console.log(`Average: ${average}`);
 
-// TODO: forEach
+temperatures.forEach((temperature, i) => console.log(`Día ${i + 1}: ${temperature}`));
 
-// TODO: for clásico de 2 en 2
+for (let i = 0; i < temperatures.length; i += 2) {
+  console.log(temperatures[i]);
+}

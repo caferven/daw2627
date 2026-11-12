@@ -12,19 +12,22 @@
 const prices = [100, 9, 25, 3, 50];
 const names = ["Óscar", "ana", "Bea", "Álvaro"];
 
-let ascending = []; // TODO
+let ascending = prices.toSorted((a, b) => a - b);
 console.log(ascending);
 
-let descending = []; // TODO
+let descending = prices.toSorted((a, b) => b - a);
 console.log(descending);
 
 console.log(prices);
 
-// TODO: sort() sin argumentos
+prices.sort();
 console.log(prices);
 
-// TODO: sort() sin argumentos
+prices.sort((a, b) => a - b);
+console.log(prices);
+
+names.sort();
 console.log(names);
 
-// TODO: sort() con localeCompare
+names.sort((a, b) => a.localeCompare(b));
 console.log(names);
