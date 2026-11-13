@@ -1,0 +1,38 @@
+<!doctype html>
+<!--
+  Al enviar el formulario `signup`:
+    1. Cancela el envío con `e.preventDefault()`.
+    2. Crea un `FormData` con el formulario.
+    3. Muestra en `output`: "<email> from <city>. Hobbies: <lista>"
+       - La lista sale de `getAll("hobbies")` unida con ", ".
+       - Si no hay ninguna afición marcada, muestra "none".
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FormData</title>
+</head>
+<body>
+  <form id="signup">
+    <p><label>Email: <input name="email"></label></p>
+    <p><label>City: <input name="city"></label></p>
+    <p>
+      Hobbies:
+      <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+      <label><input type="checkbox" name="hobbies" value="sport"> Sport</label>
+      <label><input type="checkbox" name="hobbies" value="books"> Books</label>
+    </p>
+    <button>Send</button>
+  </form>
+  <p id="output"></p>
+
+  <script>
+    const form = document.querySelector("#signup");
+    const output = document.querySelector("#output");
+
+    form.addEventListener("submit", (e) => {
+      // TODO
+    });
+  </script>
+</body>
+</html>

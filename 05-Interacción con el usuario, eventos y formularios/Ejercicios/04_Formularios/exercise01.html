@@ -1,0 +1,40 @@
+<!doctype html>
+<!--
+  Al pulsar `show`, lee los controles y muestra en `output`:
+    "Hello, <nombre>. Newsletter: <yes/no>. Language: <value> (<texto visible>)"
+  Pistas:
+    - Casilla: `checked` es true o false; conviértelo a "yes" o "no".
+    - Select: `value` da el value de la opción y `options[selectedIndex].text` su texto.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reading controls</title>
+</head>
+<body>
+  <p><label>Name: <input id="name"></label></p>
+  <p><label><input type="checkbox" id="newsletter"> Subscribe to the newsletter</label></p>
+  <p>
+    <label>Language:
+      <select id="language">
+        <option value="es">Spanish</option>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+      </select>
+    </label>
+  </p>
+  <button id="show">Show</button>
+  <p id="output"></p>
+
+  <script>
+    const nameInput = document.querySelector("#name");
+    const newsletter = document.querySelector("#newsletter");
+    const language = document.querySelector("#language");
+    const output = document.querySelector("#output");
+
+    document.querySelector("#show").addEventListener("click", () => {
+      // TODO
+    });
+  </script>
+</body>
+</html>

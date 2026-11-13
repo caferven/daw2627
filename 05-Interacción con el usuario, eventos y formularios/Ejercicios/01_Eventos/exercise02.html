@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+  Completa el comportamiento de los botones:
+    - Count: suma 1 a `total` con la función `addOne` (regístrala con `addEventListener`).
+    - Bonus: suma 10 a `total`, pero solo la primera vez.
+    - Stop: quita el manejador `addOne` del botón Count con `removeEventListener`.
+  Muestra el total actualizado en `total` después de cada suma.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Counter</title>
+</head>
+<body>
+  <button id="count">Count</button>
+  <button id="bonus">Bonus</button>
+  <button id="stop">Stop</button>
+  <p id="total">Total: 0</p>
+
+  <script>
+    const countButton = document.querySelector("#count");
+    const bonusButton = document.querySelector("#bonus");
+    const stopButton = document.querySelector("#stop");
+    const totalLabel = document.querySelector("#total");
+    let total = 0;
+
+    function addOne() {
+      total++;
+      totalLabel.textContent = `Total: ${total}`;
+    }
+
+    // TODO
+  </script>
+</body>
+</html>

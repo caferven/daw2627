@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+  Registra estos manejadores en el recuadro `box`:
+    - mouseenter: escribe "Inside" en el recuadro y añade la clase `active`.
+    - mouseleave: escribe "Outside" y quita la clase `active`.
+    - mousemove: muestra en `position` "X: <clientX>, Y: <clientY>".
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mouse</title>
+  <style>
+    #box {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed gray;
+      display: grid;
+      place-items: center;
+    }
+    #box.active {
+      background: lightyellow;
+      border-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">Outside</div>
+  <p id="position"></p>
+
+  <script>
+    const box = document.querySelector("#box");
+    const position = document.querySelector("#position");
+
+    // TODO
+  </script>
+</body>
+</html>

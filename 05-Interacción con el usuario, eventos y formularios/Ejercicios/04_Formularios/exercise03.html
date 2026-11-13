@@ -1,0 +1,28 @@
+<!doctype html>
+<!--
+  Al pulsar `calculate`, muestra en `result` "Total: <precio * cantidad>€".
+    - Lee los dos campos con `valueAsNumber` (si están vacíos da NaN).
+    - Si alguno es NaN, muestra "Invalid data" en su lugar.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Numbers</title>
+</head>
+<body>
+  <p><label>Price: <input id="price" type="number" step="0.01"></label></p>
+  <p><label>Quantity: <input id="quantity" type="number"></label></p>
+  <button id="calculate">Calculate</button>
+  <p id="result"></p>
+
+  <script>
+    const price = document.querySelector("#price");
+    const quantity = document.querySelector("#quantity");
+    const result = document.querySelector("#result");
+
+    document.querySelector("#calculate").addEventListener("click", () => {
+      // TODO
+    });
+  </script>
+</body>
+</html>

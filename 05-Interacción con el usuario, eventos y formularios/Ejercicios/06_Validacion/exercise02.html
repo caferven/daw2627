@@ -1,0 +1,45 @@
+<!doctype html>
+<!--
+  Validación nativa de HTML5:
+    1. Añade en el HTML los atributos necesarios para que:
+         - email sea obligatorio y de tipo email.
+         - age sea un número entre 18 y 99.
+         - zip sea obligatorio, con exactamente 5 dígitos (`pattern`) y un `title`
+           que explique el formato.
+    2. Con JavaScript, en el evento `input` de `confirm`, usa `setCustomValidity`:
+         - Si no coincide con `password`: "Passwords do not match".
+         - Si coincide: "" (sin error).
+  El submit ya está hecho: solo se lanza si todos los campos son válidos.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 validation</title>
+  <style>
+    input:user-invalid { border: 2px solid #b91c1c; }
+  </style>
+</head>
+<body>
+  <form id="account">
+    <p><label>Email: <input name="email"></label></p>
+    <p><label>Age: <input name="age"></label></p>
+    <p><label>Zip: <input name="zip"></label></p>
+    <p><label>Password: <input name="password" type="password" required></label></p>
+    <p><label>Confirm: <input name="confirm" type="password" required></label></p>
+    <button>Create account</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    const form = document.querySelector("#account");
+    const { password, confirm } = form.elements;
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      document.querySelector("#result").textContent = "Valid form";
+    });
+
+    // TODO
+  </script>
+</body>
+</html>

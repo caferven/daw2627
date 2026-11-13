@@ -1,0 +1,41 @@
+<!doctype html>
+<!--
+  Al pulsar `show`, lee el color marcado en los radio `color`:
+    - Si no hay ninguno marcado, muestra en `output` "Choose a color".
+    - Si lo hay, muestra "Size: <talla> | Color: <color>".
+  Pista: `document.querySelector("[name=color]:checked")` devuelve null si no hay ninguno.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Select and radio</title>
+</head>
+<body>
+  <p>
+    <label>Size:
+      <select id="size">
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+      </select>
+    </label>
+  </p>
+  <p>
+    Color:
+    <label><input type="radio" name="color" value="red"> Red</label>
+    <label><input type="radio" name="color" value="blue"> Blue</label>
+    <label><input type="radio" name="color" value="green"> Green</label>
+  </p>
+  <button id="show">Show</button>
+  <p id="output"></p>
+
+  <script>
+    const size = document.querySelector("#size");
+    const output = document.querySelector("#output");
+
+    document.querySelector("#show").addEventListener("click", () => {
+      // TODO
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<!--
+  El textarea `bio` ya limita la longitud con maxlength="100".
+  Con el evento `input`:
+    - Muestra en `counter` "<longitud> / 100".
+    - Añade la clase `warning` a `counter` cuando queden 10 caracteres o menos,
+      y quítala si no (`classList.toggle(clase, condición)`).
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Character counter</title>
+  <style>
+    .warning {
+      color: #b45309;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="bio" maxlength="100" rows="4" cols="40"></textarea>
+  <p id="counter">0 / 100</p>
+
+  <script>
+    const bio = document.querySelector("#bio");
+    const counter = document.querySelector("#counter");
+
+    bio.addEventListener("input", () => {
+      // TODO
+    });
+  </script>
+</body>
+</html>

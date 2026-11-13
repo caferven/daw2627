@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+  Al enviar el formulario `booking`, cancela siempre el envío (no hay servidor) y comprueba:
+    - name: obligatorio (usa `trim()`).          Mensaje: "Required"
+    - province: hay que elegir una (value "").   Mensaje: "Choose one"
+    - terms: la casilla debe estar marcada.      Mensaje: "Accept the terms"
+  Escribe cada mensaje en su <span id="msg-<campo>"> y deja vacíos los de los campos
+  correctos. Si no hay ningún error, muestra "Booking sent" en `result`.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Validation</title>
+  <style>
+    .msg { color: #b91c1c; margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <form id="booking" novalidate>
+    <p>
+      <label>Name: <input name="name"></label>
+      <span class="msg" id="msg-name"></span>
+    </p>
+    <p>
+      <label>Province:
+        <select name="province">
+          <option value="">Choose...</option>
+          <option value="V">Valencia</option>
+          <option value="A">Alicante</option>
+          <option value="CS">Castellón</option>
+        </select>
+      </label>
+      <span class="msg" id="msg-province"></span>
+    </p>
+    <p>
+      <label><input type="checkbox" name="terms"> I accept the terms</label>
+      <span class="msg" id="msg-terms"></span>
+    </p>
+    <button>Book</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    const form = document.querySelector("#booking");
+    const { name, province, terms } = form.elements;
+    const result = document.querySelector("#result");
+
+    form.addEventListener("submit", (e) => {
+      // TODO
+    });
+  </script>
+</body>
+</html>

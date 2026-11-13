@@ -1,0 +1,32 @@
+<!doctype html>
+<!--
+  Registra con `addEventListener` dos manejadores para el clic del botón `greet`:
+    - `sayHello`: muestra "Hello!" en el párrafo `message`.
+    - Una función flecha que incremente `clicks` y lo muestre en `counter`.
+  Comprueba que se ejecutan los dos, en el orden en que se registraron.
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Click</title>
+</head>
+<body>
+  <button id="greet">Greet</button>
+  <p id="message"></p>
+  <p id="counter">Clicks: 0</p>
+
+  <script>
+    const greetButton = document.querySelector("#greet");
+    const message = document.querySelector("#message");
+    const counter = document.querySelector("#counter");
+    let clicks = 0;
+
+    function sayHello() {
+      message.textContent = "Hello!";
+    }
+
+    // TODO
+  </script>
+</body>
+</html>

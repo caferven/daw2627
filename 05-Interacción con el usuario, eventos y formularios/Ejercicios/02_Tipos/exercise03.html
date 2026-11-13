@@ -1,0 +1,40 @@
+<!doctype html>
+<!--
+  Escucha el evento `keydown` en `document`:
+    - Muestra en `lastKey` la tecla pulsada (`e.key`).
+    - Con "ArrowRight" / "ArrowLeft" mueve `player` 20 px a la derecha / izquierda:
+      actualiza la variable `x` y asígnala a `player.style.left`.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Keyboard</title>
+  <style>
+    #track {
+      position: relative;
+      height: 40px;
+      border-bottom: 2px solid gray;
+    }
+    #player {
+      position: absolute;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: steelblue;
+    }
+  </style>
+</head>
+<body>
+  <p>Press any key. Use the arrows to move the square.</p>
+  <div id="track"><div id="player"></div></div>
+  <p id="lastKey">Last key: -</p>
+
+  <script>
+    const player = document.querySelector("#player");
+    const lastKey = document.querySelector("#lastKey");
+    let x = 0;
+
+    // TODO
+  </script>
+</body>
+</html>

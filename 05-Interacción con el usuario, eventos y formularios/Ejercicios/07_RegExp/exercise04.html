@@ -1,0 +1,29 @@
+<!doctype html>
+<!--
+  Valida en vivo los campos `zip` y `mobile` con expresiones regulares.
+  En el evento `input` de cada campo:
+    - Comprueba el valor con `test`.
+    - Añade la clase `bad` al campo si no es válido y quítala si lo es
+      (`classList.toggle("bad", ...)`).
+  Patrones: código postal /^\d{5}$/ y móvil /^[67]\d{8}$/.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Live validation</title>
+  <style>
+    .bad { border: 2px solid #b91c1c; }
+  </style>
+</head>
+<body>
+  <p><label>Zip code: <input id="zip"></label></p>
+  <p><label>Mobile: <input id="mobile"></label></p>
+
+  <script>
+    const zip = document.querySelector("#zip");
+    const mobile = document.querySelector("#mobile");
+
+    // TODO
+  </script>
+</body>
+</html>

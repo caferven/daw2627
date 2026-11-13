@@ -1,0 +1,27 @@
+<!doctype html>
+<!--
+  Registra estos manejadores en el campo `name`:
+    - input: muestra en `preview` el texto escrito en mayúsculas.
+    - change: muestra en `status` "Changed to: <valor>".
+    - keydown: si la tecla pulsada (`e.key`) es "Escape", vacía el campo y `preview`.
+  Observa cuándo salta cada evento: input con cada cambio, change al salir del campo.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Input and change</title>
+</head>
+<body>
+  <label>Name: <input id="name"></label>
+  <p id="preview"></p>
+  <p id="status"></p>
+
+  <script>
+    const nameInput = document.querySelector("#name");
+    const preview = document.querySelector("#preview");
+    const status = document.querySelector("#status");
+
+    // TODO
+  </script>
+</body>
+</html>
