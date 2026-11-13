@@ -23,10 +23,10 @@ const office = new Address("Madrid", "España");
 const employee1 = new Employee("Lucía", "Developer");
 const employee2 = new Employee("Marcos", "Designer");
 
-// TODO: asigna office a employee1
+employee1.address = office;
 
-let city1 = ""; // TODO
-console.log(`${employee1.name} works in ${city1} (${employee1.address?.country})`);
+let city1 = employee1.address.city;
+console.log(`${employee1.name} works in ${city1} (${employee1.address.country})`);
 
-let city2 = ""; // TODO
+let city2 = employee2.address?.city;
 console.log(`${employee2.name} works in ${city2}`);

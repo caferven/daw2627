@@ -20,15 +20,15 @@ const user = new User("Ana", "ana@mail.com", 28);
 const other = new User("Luis", "luis@mail.com", 35);
 const field = "age";
 
-// TODO: name con punto
-// TODO: email con corchetes
-// TODO: la propiedad indicada por `field`
+console.log(user.name);
+console.log(user["email"]);
+console.log(user["field"]);
 
-// TODO: añade city
+user.city = "Valencia";
 console.log(user);
-console.log(`Other city: ${undefined /* TODO */}`);
+console.log(`Other city: ${other.city}`);
 
-// TODO: borra age
-console.log(`Has age? ${undefined /* TODO */}`);
+delete user.age;
+console.log(`Has age? ${"age" in user}`);
 
-console.log(`user[0]: ${undefined /* TODO */}`);
+console.log(`user[0]: ${user[0]}`);

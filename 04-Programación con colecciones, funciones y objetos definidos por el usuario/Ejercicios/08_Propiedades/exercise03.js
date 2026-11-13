@@ -13,15 +13,19 @@ class BankAccount {
   }
 
   deposit(amount) {
-    // TODO
+    this.balance += amount;
   }
 
   withdraw(amount) {
-    // TODO
+    if (amount > this.balance) {
+      return false;
+    }
+    this.balance -= amount;
+    return true;
   }
 
   describe() {
-    // TODO
+    return `${this.owner}: ${this.balance}€`;
   }
 }
 
