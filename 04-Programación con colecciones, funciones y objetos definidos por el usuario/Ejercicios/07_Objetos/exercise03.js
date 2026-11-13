@@ -5,14 +5,17 @@
  */
 
 class Rectangle {
-  // TODO
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
 }
 
-const small = new Rectangle(); // TODO
-const big = new Rectangle(); // TODO
+const small = new Rectangle(3, 4);
+const big = new Rectangle(5, 5);
 
-let smallArea = 0; // TODO
-let bigArea = 0; // TODO
+let smallArea = small.width * small.height;
+let bigArea = big.width * big.height;
 
 console.log(`Small: ${smallArea}`);
 console.log(`Big: ${bigArea}`);

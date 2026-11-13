@@ -4,7 +4,11 @@
  */
 
 class Book {
-  // TODO
+  constructor(title, author, pages) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+  }
 }
 
 const book1 = new Book("Cien años de soledad", "Gabriel García Márquez", 471);

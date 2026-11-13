@@ -8,11 +8,13 @@
 const currentYear = 2026;
 
 function Car(brand, model, year) {
-  // TODO
+  this.brand = brand;
+  this.model = model;
+  this.year = year;
 }
 
-const car1 = new Car(); // TODO
-const car2 = new Car(); // TODO
+const car1 = new Car("Seat", "Ibiza", 2018);
+const car2 = new Car("Toyota", "Corolla", 2023);
 
-console.log(`${car1.brand} ${car1.model} (${car1.year}): ${0 /* TODO */} años`);
-console.log(`${car2.brand} ${car2.model} (${car2.year}): ${0 /* TODO */} años`);
+console.log(`${car1.brand} ${car1.model} (${car1.year}): ${currentYear - car1.year} años`);
+console.log(`${car2.brand} ${car2.model} (${car2.year}): ${currentYear - car2.year} años`);
