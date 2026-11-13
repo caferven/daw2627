@@ -6,11 +6,11 @@
  */
 
 const celsius = [0, 25, 100, -10];
-let fahrenheit = []; // TODO
+let fahrenheit = celsius.map((c) => c * 9 / 5 + 32);
 console.log(fahrenheit);
 
 const names = ["ana", "luis", "marta"];
-let upperNames = []; // TODO
+let upperNames = names.map((name) => name.toUpperCase());
 console.log(upperNames);
 
 console.log(names);

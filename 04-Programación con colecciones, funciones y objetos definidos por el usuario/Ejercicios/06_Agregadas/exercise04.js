@@ -6,7 +6,10 @@
 
 const prices = [15, 40, 25, 8, 60];
 
-let total = 0; // TODO
+let total = prices
+  .filter((price) => price > 20)
+  .map((price) => price * 0.9)
+  .reduce((sum, price) => sum + price, 0);
 
 console.log(`Total: ${total}€`);
 console.log(prices);

@@ -5,9 +5,9 @@
  */
 
 const cart = [12.5, 7.5, 30];
-let total = 0; // TODO
+let total = cart.reduce((sum, price) => sum + price, 0);
 console.log(`Total: ${total}€`);
 
 const scores = [45, 82, 67, 91, 30];
-let best = 0; // TODO
+let best = scores.reduce((max, score) => (score > max ? score : max), scores[0]);
 console.log(`Best: ${best}`);
