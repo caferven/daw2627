@@ -26,7 +26,13 @@
       message.textContent = "Hello!";
     }
 
-    // TODO
+    function addClicks() {
+      clicks++;
+      counter.textContent = `Clicks: ${clicks}`;
+    }
+
+    greetButton.addEventListener("click", sayHello);
+    greetButton.addEventListener("click", () => addClicks());
   </script>
 </body>
 </html>

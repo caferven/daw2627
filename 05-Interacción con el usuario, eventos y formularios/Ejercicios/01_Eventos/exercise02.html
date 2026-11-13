@@ -29,7 +29,16 @@
       totalLabel.textContent = `Total: ${total}`;
     }
 
-    // TODO
+    countButton.addEventListener("click", addOne);
+
+    bonusButton.addEventListener("click", () => {
+      total += 10;
+      totalLabel.textContent = `Total: ${total}`;
+    }, { once: true });
+
+    stopButton.addEventListener("click", () => {
+      countButton.removeEventListener("click", addOne);
+    });
   </script>
 </body>
 </html>
