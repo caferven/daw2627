@@ -31,7 +31,19 @@
     const box = document.querySelector("#box");
     const position = document.querySelector("#position");
 
-    // TODO
+    box.addEventListener("mouseenter", () => {
+      box.textContent = "Inside";
+      box.classList.add("active");
+    });
+
+    box.addEventListener("mouseleave", () => {
+      box.textContent = "Outside";
+      box.classList.remove("active");
+    });
+
+    box.addEventListener("mousemove", (e) => {
+      position.textContent = `X: ${e.clientX}, Y: ${e.clientY}`;
+    });
   </script>
 </body>
 </html>

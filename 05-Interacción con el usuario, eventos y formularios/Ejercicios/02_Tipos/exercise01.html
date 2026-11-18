@@ -21,7 +21,20 @@
     const preview = document.querySelector("#preview");
     const status = document.querySelector("#status");
 
-    // TODO
+    nameInput.addEventListener("input", (e) => {
+      preview.textContent = e.target.value.toUpperCase();
+    });
+
+    nameInput.addEventListener("change", () => {
+      status.textContent = `Changed to: ${nameInput.value}`;
+    });
+
+    nameInput.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        nameInput.value = "";
+        preview.textContent = "";
+      }
+    });
   </script>
 </body>
 </html>

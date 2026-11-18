@@ -34,7 +34,13 @@
     const lastKey = document.querySelector("#lastKey");
     let x = 0;
 
-    // TODO
+    document.addEventListener("keydown", (e) => {
+      lastKey.textContent = `Last key: ${e.key}`;
+
+      if (e.key === "ArrowRight") x += 20;
+      if (e.key === "ArrowLeft") x -= 20;
+      player.style.left = `${x}px`;
+    });
   </script>
 </body>
 </html>
