@@ -10,7 +10,15 @@
   <meta charset="utf-8">
   <title>Event object</title>
   <script>
-    // TODO
+    document.addEventListener("DOMContentLoaded", () => {
+      const info = document.querySelector("#info");
+      const output = document.querySelector("#output");
+
+      info.addEventListener("click", (e) => {
+        output.textContent =
+          `type: ${e.type}, target: ${e.target.id}, x: ${e.clientX}, y: ${e.clientY}`;
+      });
+    });
   </script>
 </head>
 <body>
