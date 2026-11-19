@@ -31,7 +31,13 @@
     const output = document.querySelector("#output");
 
     form.addEventListener("submit", (e) => {
-      // TODO
+        e.preventDefault();
+
+      const data = new FormData(form);
+      const hobbies = data.getAll("hobbies");
+      const list = hobbies.length > 0 ? hobbies.join(", ") : "none";
+
+      output.textContent = `${data.get("email")} from ${data.get("city")}. Hobbies: ${list}`;
     });
   </script>
 </body>

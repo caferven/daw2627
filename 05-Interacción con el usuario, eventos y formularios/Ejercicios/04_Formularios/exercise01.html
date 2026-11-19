@@ -33,7 +33,12 @@
     const output = document.querySelector("#output");
 
     document.querySelector("#show").addEventListener("click", () => {
-      // TODO
+      const subscribed = newsletter.checked ? "yes" : "no";
+      const languageText = language.options[language.selectedIndex].text;
+
+      output.textContent =
+        `Hello, ${nameInput.value}. Newsletter: ${subscribed}. ` +
+        `Language: ${language.value} (${languageText})`;
     });
   </script>
 </body>

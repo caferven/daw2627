@@ -19,7 +19,15 @@
     const username = document.querySelector("#username");
     const city = document.querySelector("#city");
 
-    // TODO
+    username.focus();
+
+    username.addEventListener("focus", () => username.select());
+
+    document.querySelector("#clear").addEventListener("click", () => {
+      username.value = "";
+      city.value = "";
+      username.focus();
+    });
   </script>
 </body>
 </html>

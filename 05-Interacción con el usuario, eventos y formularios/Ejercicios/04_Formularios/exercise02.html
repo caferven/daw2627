@@ -34,7 +34,13 @@
     const output = document.querySelector("#output");
 
     document.querySelector("#show").addEventListener("click", () => {
-      // TODO
+      const checked = document.querySelector("[name=color]:checked");
+
+      if (checked === null) {
+        output.textContent = "Choose a color";
+      } else {
+        output.textContent = `Size: ${size.value} | Color: ${checked.value}`;
+      }
     });
   </script>
 </body>

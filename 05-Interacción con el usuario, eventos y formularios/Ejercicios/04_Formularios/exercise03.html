@@ -21,7 +21,14 @@
     const result = document.querySelector("#result");
 
     document.querySelector("#calculate").addEventListener("click", () => {
-      // TODO
+      const p = price.valueAsNumber;
+      const q = quantity.valueAsNumber;
+
+      if (Number.isNaN(p) || Number.isNaN(q)) {
+        result.textContent = "Invalid data";
+      } else {
+        result.textContent = `Total: ${p * q}€`;
+      }
     });
   </script>
 </body>
